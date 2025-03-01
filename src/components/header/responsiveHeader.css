@@ -1,0 +1,103 @@
+/* Phone */
+@media (max-width: 767px) {
+        .headerBody{
+            position: relative;
+        }
+        .logoContainer img{
+            height: 3em;
+        }
+        .navContainer,
+        .headerSocialIconsContainer{
+            display: none;
+        }
+        .responsiveNavBtn{
+            display: block;
+            background-color: transparent;
+            border: none;
+            height: 2.5em;
+            width: 2.5em;
+        }
+        .responsiveNavBtn svg{
+            height: 2.5em;
+            width: 2.5em;
+        }
+        .mobileMenu{
+            border: 1px solid red;
+            background-color: rgba(255, 255, 255, .7);
+            backdrop-filter: blur(5px);
+            position: fixed;
+            right: 0;
+            transform: translateX(100%);
+            height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            transition: all .5s ease-in-out;
+            overflow-x: hidden;
+            top: 0;
+            padding: 0 2em 2em 2em;
+            margin-top: 7vh;
+            font-size: 1.5em;
+        }
+        .mobileNavBtn{
+            display: flex;
+            flex-direction: column;
+        }
+        .mobileSocialIcons{
+            display: flex;
+            padding: 1em;
+            justify-content: space-around;
+        }
+        .mobileSocialIcon svg{
+            height: 1.5em;
+        }
+        .mobilePhone{
+            font-family: var(--serif-font);
+            font-weight: 500;
+        }
+            .mobilePhone p:active{
+                color: brown;
+            }
+        .mobileMenu.open{
+            transform: translateX(0);
+            top: 0;
+        }
+}
+
+/* Tablet */
+@media (min-width: 768px) and
+        (max-width: 1023px) {
+            .logoContainer img{
+                height: 3em;
+            }
+            .navBtn,
+            .activeNavBtn{
+                font-size: .8em;
+            }
+            .headerSocialIconsContainer svg{
+                height: 1em;
+            }
+            .socialIcon{
+                height: 2em;
+                width: 2em;
+            }
+        }
+
+/* Laptop */
+@media (min-width: 1024px) and
+        (max-width: 1439px) {
+            .logoContainer img{
+                height: 3em;
+            }
+            .navBtn,
+            .activeNavBtn{
+                font-size: .8em;
+            }
+            .headerSocialIconsContainer svg{
+                height: 1em;
+            }
+            .socialIcon{
+                height: 2em;
+                width: 2em;
+            }
+        }

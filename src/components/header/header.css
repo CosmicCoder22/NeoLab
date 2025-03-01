@@ -1,0 +1,129 @@
+.headerBody {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    height: 7vh;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 3em;
+    background-color: transparent;
+}
+
+.logoContainer {
+    height: fit-content;
+    width: 50%;
+    background-color: transparent;
+    padding-top: .5em;
+}
+
+.logoContainer img{
+    height: 4em;
+    transition: all .2s ease-in-out;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.navBtn {
+    background-color: transparent;
+    border: none;
+    padding: 1em 0.5em;
+    cursor: pointer;
+    position: relative;
+    font-family: var(--serif-font);
+    font-weight: 400;
+    font-size: 1em;
+    transition: all .2s ease-in-out;
+}
+
+.navBtn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark-text);
+    height: 0.1em;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
+.navBtn:hover::before {
+    width: 50%;
+}
+
+.activeNavBtn {
+    background-color: transparent;
+    padding: 1em 0.5em;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    font-family: var(--serif-font);
+    font-weight: 400;
+    font-size: 1em;
+    transition: all .2s ease-in-out;
+}
+
+.activeNavBtn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark-text);
+    font-family: var(--serif-font);
+    height: 0.1em;
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+.headerSocialIconsContainer{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+}
+
+.headerSocialIconsContainer svg{
+    height: 1.5em;
+    padding: 0;
+}
+
+.socialIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 25%;
+    border: .1em solid var(--dark-text);
+    cursor: pointer;
+    transition:  all .2s ease-in-out;
+}
+
+.socialIcon:hover{
+    background-color: var(--dark-text);
+    font-family: var(--serif-font);
+}
+.socialIcon:hover svg{
+    color: var(--light-text);
+}
+
+.responsiveNavBtn{
+    display: none;
+}
+
+.mobileMenu{
+    display: none;
+}

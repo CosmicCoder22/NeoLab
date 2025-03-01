@@ -1,0 +1,61 @@
+.homeBody {
+    background-image: url(/src/assets/homeBackground.webp);
+    background-position: center;
+    background-size: cover;
+    height: 200vh;
+    padding-top: 10vh;
+}
+.homeContent {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--serif-font);
+}
+.homeText {
+  width: 50%;
+}
+.homeText p {
+  width: 100%;
+  height: 40%;
+  align-content: center;
+  text-align: center;
+  font-weight: 600;
+}
+.homeText h1 {
+  width: 100%;
+  height: 50%;
+  font-size: 6em;
+  padding: .5em;
+}
+.homeMainImage {
+  width: 50%;
+}
+
+.homeMainImage img {
+  height: 50em;
+}
+
+.homeMarquee{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    border-top: 2px solid var(--dark-text);
+    border-bottom: 2px solid var(--dark-text);
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.homeMarquee div {
+    display: flex;
+    width: 200%;
+    animation: homeMarquee 25s linear infinite;
+}
+
+.homeMarquee p {
+    white-space: nowrap;
+    width: 100%;
+    font-size: 2.6em;
+}
+
+@keyframes homeMarquee {
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(-50%);}
+}
