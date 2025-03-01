@@ -14,11 +14,11 @@ function App() {
   return (
     <div className="appBody">
         <Header setActiveSection={setActiveSection}/>
-        {/* <div className="appContent">
+        <div className="appContent">
           {activeSection === 'home' && (<Home />)}
           {activeSection === 'analisys' && (<LaboratoryAnalisys />)}
           {activeSection === 'research' && (<ResearchCenter />)}          
-        </div> */}
+        </div>
 
     </div>
   )

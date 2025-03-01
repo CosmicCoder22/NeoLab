@@ -33,9 +33,9 @@ function Header({ setActiveSection }) {
             <button className="responsiveNavBtn" onClick={() => setIsToggleOpen(!isToggleOpen)}><FontAwesomeIcon icon={faBars} /></button>
             <div className={`mobileMenu ${isToggleOpen ? 'open' : ''}`}>
                 <div className="mobileNavBtn">
-                  <button className='navBtn' onClick={() => setActiveSection('home')}>HOME</button>
-                  <button className='navBtn' onClick={() => setActiveSection('analisys')}>LABORATORY ANALISYS</button>
-                  <button className='navBtn' onClick={() => setActiveSection('research')}>RESEARCH CENTER</button>
+                  <button className='navBtn' onClick={() => {setActiveSection('home');setIsToggleOpen(!isToggleOpen)}}>HOME</button>
+                  <button className='navBtn' onClick={() => {setActiveSection('analisys');setIsToggleOpen(!isToggleOpen)}}>LABORATORY ANALISYS</button>
+                  <button className='navBtn' onClick={() => {setActiveSection('research');setIsToggleOpen(!isToggleOpen)}}>RESEARCH CENTER</button>
                 </div>
                 <div className="mobileSocialIcons">
                   <div className="mobileSocialIcon"><FontAwesomeIcon icon={faCompass} /></div>

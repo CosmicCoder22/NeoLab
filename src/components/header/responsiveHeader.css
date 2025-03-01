@@ -1,7 +1,10 @@
 /* Phone */
 @media (max-width: 767px) {
         .headerBody{
-            position: relative;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: #ffffff;
         }
         .logoContainer img{
             height: 3em;
@@ -22,14 +25,15 @@
             width: 2.5em;
         }
         .mobileMenu{
-            border: 1px solid red;
-            background-color: rgba(255, 255, 255, .7);
-            backdrop-filter: blur(5px);
             position: fixed;
             right: 0;
             transform: translateX(100%);
             height: fit-content;
+            width: 100%;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
             flex-wrap: wrap;
             flex-direction: column;
             transition: all .5s ease-in-out;
@@ -38,6 +42,7 @@
             padding: 0 2em 2em 2em;
             margin-top: 7vh;
             font-size: 1.5em;
+            background-color: #ffffff;
         }
         .mobileNavBtn{
             display: flex;
@@ -47,6 +52,7 @@
             display: flex;
             padding: 1em;
             justify-content: space-around;
+            width: 80%;
         }
         .mobileSocialIcon svg{
             height: 1.5em;
@@ -55,12 +61,18 @@
             font-family: var(--serif-font);
             font-weight: 500;
         }
+            .mobilePhone p{
+                transition: all .2s ease-in-out;
+            }
             .mobilePhone p:active{
-                color: brown;
+                transform: scale(.9);
             }
         .mobileMenu.open{
             transform: translateX(0);
             top: 0;
+        }
+        .open{
+            backdrop-filter: blur(5px);
         }
 }
 
