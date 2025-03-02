@@ -1,0 +1,135 @@
+.footerBody{
+    height: 50ch;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    font-family: var(--serif-font);
+}
+
+.footerLogo{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 2em;
+}
+.footerLogo img{
+    height: 5em;
+}
+.footerNav{
+    display: flex;
+    justify-content: space-between;
+}
+.footerNavBtn{
+    display: flex;
+    align-items: end;
+    gap: 2em;
+}
+.footerNavBtn button{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    padding: .5em;
+}
+.footerNavBtn button::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: .1em;
+    background-color: var(--dark-text);
+    transition: all .3s ease-in-out;
+}
+.footerNavBtn button:hover::before{
+    width: 100%;
+}
+.footerLine{
+    border-bottom: 1px solid rgb(66, 66, 66);
+}
+
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    color: var(--grey);
+    font-weight: 500;
+}
+.footerContacts{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.address,
+.phone,
+.updates{
+    width: 30%;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.phone button{
+    position: relative;
+    padding: .5em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+.phone button::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: .1em;
+    background-color: var(--dark-text);
+    transition: all .3s ease-in-out;
+}
+.phone button:hover::before{
+    width: 0;
+}
+.updates{
+    display: flex;
+    gap: .5em;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+}
+.updates button{
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.updates button:hover{
+    color: var(--grey);
+}
+
+.footerCopyright{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    padding-bottom: 2em;
+    justify-content: space-between;
+}
+.footerSocials{
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+}
+.footerSocials svg{
+    height: 2em;
+    transition: all .2s ease-in-out;
+}
+.footerSocials svg:hover{
+    color: var(--dark-text);
+}

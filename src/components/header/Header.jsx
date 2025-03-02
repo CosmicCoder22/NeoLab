@@ -5,7 +5,7 @@ import logo from '../../assets/logoDark.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareXTwitter, faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faCompass, faBars, faPhone, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faCompass, faBars, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 
 function Header({ setActiveSection }) {
@@ -15,7 +15,7 @@ function Header({ setActiveSection }) {
   const [isToggleOpen, setIsToggleOpen] = useState(false)
 
   return (
-    <div className='headerBody'>
+    <div className='headerBody' id='home'>
         <div className="headerContent">
             <div className="logoContainer">
                 <img src={logo} alt="" />

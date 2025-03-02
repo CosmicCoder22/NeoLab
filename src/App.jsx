@@ -4,6 +4,7 @@ import Header from './components/header/Header'
 import Home from './sections/home/Home'
 import LaboratoryAnalisys from './sections/laboratoryAnalisys/LaboratoryAnalisys'
 import ResearchCenter from './sections/researchCenter/ResearchCenter'
+import Footer from './components/footer/Footer'
 
 function App() {
   
@@ -19,7 +20,7 @@ function App() {
           {activeSection === 'analisys' && (<LaboratoryAnalisys />)}
           {activeSection === 'research' && (<ResearchCenter />)}          
         </div>
-
+        <Footer/>
     </div>
   )
 }

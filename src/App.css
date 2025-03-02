@@ -27,11 +27,17 @@
   --serif-font: "Open Sans", serif;
   --light-text:  #ffffff;
   --dark-text: #090116;
+  --grey: #505050;
 }
 
 body{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .appBody{
   position: relative;
+}
+
+.appContent{
+  margin-top: 7vh;
 }
