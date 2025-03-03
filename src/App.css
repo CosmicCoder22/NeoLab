@@ -28,6 +28,9 @@
   --light-text:  #ffffff;
   --dark-text: #090116;
   --grey: #505050;
+  --mobile-font: .6em;
+  --laptop-font: .8em;
+  --desktop-font: 1em;
 }
 
 body{
@@ -39,5 +42,4 @@ body{
 }
 
 .appContent{
-  margin-top: 7vh;
 }

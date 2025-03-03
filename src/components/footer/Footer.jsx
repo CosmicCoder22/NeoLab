@@ -8,16 +8,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareXTwitter, faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faCompass} from "@fortawesome/free-solid-svg-icons";
 
-function Footer() {
+function Footer({ setActiveSection, setActiveHeaderBtn }) {
   return (
     <div className="footerBody">
       <div className="footerLogo">
         <div className="footerNav">
           <img src={footerLogo} alt="" />
           <div className="footerNavBtn">
-            <button href="">HOME</button>
-            <button href="">LABORATORY ANALISYS</button>
-            <button href="">RESEARCH CENTER</button>
+            <button href="" onClick={() => {setActiveSection('home');setActiveHeaderBtn('home')}}>HOME</button>
+            <button href="" onClick={() => {setActiveSection('analisys');setActiveHeaderBtn('analisys')}}>LABORATORY ANALISYS</button>
+            <button href="" onClick={() => {setActiveSection('research');setActiveHeaderBtn('research')}}>RESEARCH CENTER</button>
           </div>
         </div>
         <div className="footerLine"></div>

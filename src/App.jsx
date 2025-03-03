@@ -8,19 +8,19 @@ import Footer from './components/footer/Footer'
 
 function App() {
   
-  
+  const [activeHeaderBtn, setActiveHeaderBtn] = useState('home')
 
   const [activeSection, setActiveSection] = useState('home')
 
   return (
     <div className="appBody">
-        <Header setActiveSection={setActiveSection}/>
+        <Header setActiveSection={setActiveSection} setActiveHeaderBtn={setActiveHeaderBtn} activeHeaderBtn={activeHeaderBtn}/>
         <div className="appContent">
           {activeSection === 'home' && (<Home />)}
           {activeSection === 'analisys' && (<LaboratoryAnalisys />)}
           {activeSection === 'research' && (<ResearchCenter />)}          
         </div>
-        <Footer/>
+        <Footer setActiveSection={setActiveSection} setActiveHeaderBtn={setActiveHeaderBtn}/>
     </div>
   )
 }

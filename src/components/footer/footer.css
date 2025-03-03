@@ -1,5 +1,5 @@
 .footerBody{
-    height: 50ch;
+    height: 50vh;
     padding-top: 2em;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,9 @@
 .footerNavBtn{
     display: flex;
     align-items: end;
-    gap: 2em;
+    justify-content: space-between;
+    border: 1px solid red;
+    width: fit-content;
 }
 .footerNavBtn button{
     background-color: transparent;

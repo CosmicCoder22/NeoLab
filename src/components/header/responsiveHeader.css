@@ -3,8 +3,9 @@
         .headerBody{
             position: sticky;
             top: 0;
+            left: 0;
             z-index: 100;
-            background-color: #ffffff;
+            background-color: #ff6262;
         }
         .logoContainer img{
             height: 3em;
@@ -84,7 +85,7 @@
             }
             .navBtn,
             .activeNavBtn{
-                font-size: .8em;
+                font-size: var(--laptop-font);
             }
             .headerSocialIconsContainer svg{
                 height: 1em;
@@ -103,7 +104,7 @@
             }
             .navBtn,
             .activeNavBtn{
-                font-size: .8em;
+                font-size: var(--laptop-font);
             }
             .headerSocialIconsContainer svg{
                 height: 1em;

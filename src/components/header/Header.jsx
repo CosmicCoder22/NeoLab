@@ -8,9 +8,7 @@ import { faSquareXTwitter, faSquareFacebook } from '@fortawesome/free-brands-svg
 import { faCompass, faBars, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 
-function Header({ setActiveSection }) {
-
-  const [activeHeaderBtn, setActiveHeaderBtn] = useState('home')
+function Header({ setActiveSection, setActiveHeaderBtn, activeHeaderBtn }) {
 
   const [isToggleOpen, setIsToggleOpen] = useState(false)
 

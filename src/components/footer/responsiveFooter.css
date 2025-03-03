@@ -1,0 +1,50 @@
+/* Phone */
+@media (max-width: 767px) {
+        .footerBody{
+            height: fit-content;
+            background-color: rgb(255, 0, 98);
+        }
+        .footerNav img{
+            display: none;
+        }
+        .footerNavBtn{
+            border: 1px solid black;
+            width: 100%;
+        }
+        .address,
+        .updates,
+        .phone{
+            font-size: .7em;
+        }
+        .footerCopyright{
+            font-size: .8em;
+        }
+    }
+
+/* Tablet */
+@media (min-width: 768px) and
+        (max-width: 1023px) {
+            .footerBody{
+                background-color: rgb(172, 120, 255);
+            }
+            .address,
+            .updates{
+                
+                width: fit-content;
+            }
+            .footerNavBtn{
+                border: 1px solid red;
+                justify-content: space-between;
+            }
+            .footerNavBtn button{
+                border: 1px solid black;
+            }
+        }
+
+/* Laptop */
+@media (min-width: 1024px) and
+        (max-width: 1439px) {
+            .footerBody{
+                background-color: aquamarine;
+            }
+        }
