@@ -1,8 +1,4 @@
 .homeBody {
-    background-image: url(/src/assets/homeBackground.webp);
-    background-position: center;
-    background-size: cover;
-    height: 200vh;
     padding-top: 10vh;
 }
 .homeContent {
@@ -37,6 +33,8 @@
 .homeMarquee{
     width: 95%;
     margin: auto;
+    padding: 1em 0;
+    margin-top: 3em;
     overflow: hidden;
     border-top: 2px solid var(--dark-text);
     border-bottom: 2px solid var(--dark-text);
@@ -58,4 +56,139 @@
 @keyframes homeMarquee {
     0%{transform: translateX(0%);}
     100%{transform: translateX(-50%);}
+}
+
+.homeAboutUs{
+  width: 100%;
+  padding: 0 1em;
+}
+
+.homeFacts{
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+.factContainer{
+  width: 20%;
+  padding: 8em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.factContainer img{
+  height: 4em;
+  width: 4em;
+}
+.factContainer span {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.aboutUsText{
+  display: flex;
+  width: 100%;
+}
+.aboutUsLogo{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.aboutUsTextImg{
+  width: 100%;
+  display: flex;
+  padding-left: 2em;
+  gap: 2em;
+}
+.aboutUsLogoImg{
+  display: flex;
+  width: 50%;
+}
+.aboutUsLogoImg img{
+  height: 100%;
+}
+.aboutUsLogoText{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  background-color: #0984e3;
+  border-radius: 2em;
+  padding: 2em;
+}
+.aboutUsLogoText p,
+.aboutUsLogoText span{
+  width: 100%;
+  color: white;
+  font-weight: 600;
+}
+.aboutUsLogoText span{
+  font-size: 1.5em;
+}
+.aboutUsLogoVideo{
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  padding: 2em;
+}
+.aboutUsLogoVideo video{
+  width: 100%;
+  border-radius: 2em;
+}
+.aboutUsScroll{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  overflow: scroll;
+
+  height: 100vh;
+  padding: 0 10em;
+  gap: 2em;
+}
+.aboutUsScroll p{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.scrollSectors{
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+.scrollSector{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1em;
+}
+.scrollSector svg{
+  height: 2em;
+  color: rgb(255, 62, 62);
+}
+.scrollSector p{
+  color: #626263;
+}
+.homeMarqueeFocus{
+  width: 95%;
+  margin: auto;
+  padding: 1em 0;
+  margin: 6em 0;
+  overflow: hidden;
+  border-top: 2px solid var(--dark-text);
+  border-bottom: 2px solid var(--dark-text);
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.homeMarqueeFocus div {
+  display: flex;
+  width: 203%;
+  animation: homeMarqueeFocus 25s linear infinite;
+}
+
+.homeMarqueeFocus p {
+  white-space: nowrap;
+  width: 100%;
+  font-size: 2.6em;
+}
+
+@keyframes homeMarqueeFocus {
+  0%{transform: translateX(0%);}
+  100%{transform: translateX(-50%);}
 }
