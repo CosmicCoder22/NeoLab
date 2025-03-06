@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./home.css";
 
 import homeMainImage from "../../assets/clearPill.webp";
@@ -10,10 +10,21 @@ import factImgPreclinical from "../../assets/preclinical.webp";
 import aboutUsLogoImg from "../../assets/abouUsLogoImg.webp";
 import aboutUsLogoVideo from "../../assets/aboutUsLogoVideo.webm";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPills, faHexagonNodes, faMicroscope } from "@fortawesome/free-solid-svg-icons";
+import scrollPills from "../../assets/scrollAnim1.webp";
+import scrollDna from "../../assets/scrollAnim2.webp";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPills,
+  faHexagonNodes,
+  faMicroscope,
+} from "@fortawesome/free-solid-svg-icons";
+
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Home() {
+
+
   return (
     <div className="homeBody">
       <div className="homeContent">
@@ -98,39 +109,55 @@ function Home() {
               </span>
               <div className="scrollSectors">
                 <div className="scrollSector">
-                    <FontAwesomeIcon icon={faPills} />
-                    <h1>AI in drug design</h1>
-                    <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque perspiciatis.
-                    </p>
+                  <FontAwesomeIcon icon={faPills} />
+                  <h1>AI in drug design</h1>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque perspiciatis.
+                  </p>
                 </div>
                 <div className="scrollSector">
-                    <FontAwesomeIcon icon={faHexagonNodes} />
-                    <h1>Molecular modeling</h1>
-                    <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque perspiciatis.
-                    </p>
+                  <FontAwesomeIcon icon={faHexagonNodes} />
+                  <h1>Molecular modeling</h1>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque perspiciatis.
+                  </p>
                 </div>
                 <div className="scrollSector">
-                    <FontAwesomeIcon icon={faMicroscope} />
-                    <h1>Automated high-throughput screening</h1>
-                    <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque perspiciatis.
-                    </p>
+                  <FontAwesomeIcon icon={faMicroscope} />
+                  <h1>Automated high-throughput screening</h1>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque perspiciatis.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="homeMarqueeFocus">
-          <div>
-            <p className="item item1">
-              # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS
-            </p>
-            <p className="item item2">
-              # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS
-            </p>
+          <div className="scrollEffectContainer">
+            <div className="scrollLeft" >
+              Advancing medicine, <img src={scrollPills} alt="" />
+            </div>
+
+            <div className="scrollRight">
+              <img src={scrollDna} alt="" />
+              innovating to improve lives
+            </div>
           </div>
-        </div>
+
+          <div className="homeMarqueeFocus">
+            <div>
+              <p className="item item1">
+                # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS
+                # FOCUS # FOCUS
+              </p>
+              <p className="item item2">
+                # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS
+                # FOCUS # FOCUS
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
