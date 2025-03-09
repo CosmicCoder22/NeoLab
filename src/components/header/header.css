@@ -3,7 +3,7 @@
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, .3);
     backdrop-filter: blur(5px);
     height: 7vh;
 }
@@ -25,7 +25,7 @@
 }
 
 .logoContainer img{
-    height: 4em;
+    height: 3em;
     transition: all .2s ease-in-out;
 }
 

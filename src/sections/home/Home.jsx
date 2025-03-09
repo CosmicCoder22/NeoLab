@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./home.css";
+import './responsiveHome.css'
 
 import homeMainImage from "../../assets/clearPill.webp";
 
@@ -19,8 +20,6 @@ import {
   faHexagonNodes,
   faMicroscope,
 } from "@fortawesome/free-solid-svg-icons";
-
-import { motion, useScroll, useTransform } from "framer-motion";
 
 function Home() {
 
@@ -55,24 +54,30 @@ function Home() {
         <div className="homeAboutUs">
           <div className="homeFacts">
             <div className="factContainer">
-              <img src={factImgTarget} alt="" />
-              <span>Target identification</span>
+              <div className="factImgName">
+                <img src={factImgTarget} alt="" />
+                <span>Target identification</span>                
+              </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Tempora, pariatur?
               </p>
             </div>
             <div className="factContainer">
-              <img src={factImgCompound} alt="" />
-              <span>Compound screening</span>
+              <div className="factImgName">
+                <img src={factImgCompound} alt="" />
+                <span>Compound screening</span>                
+              </div>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Officia, adipisci!
               </p>
             </div>
             <div className="factContainer">
+            <div className="factImgName">
               <img src={factImgPreclinical} alt="" />
               <span>Preclinical testing</span>
+            </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur, at!
@@ -91,7 +96,7 @@ function Home() {
                 </div>
               </div>
               <div className="aboutUsLogoVideo">
-                <video src={aboutUsLogoVideo}></video>
+                <video src={aboutUsLogoVideo} autoPlay></video>
               </div>
             </div>
             <div className="aboutUsScroll">

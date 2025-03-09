@@ -40,3 +40,8 @@ body{
 .appBody{
   position: relative;
 }
+.screenSize{
+  border: 1px solid red;
+  position: sticky;
+  top: 0;
+}

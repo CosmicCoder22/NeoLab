@@ -21,6 +21,7 @@ function App() {
           {activeSection === 'research' && (<ResearchCenter />)}          
         </div>
         <Footer setActiveSection={setActiveSection} setActiveHeaderBtn={setActiveHeaderBtn}/>
+        
     </div>
   )
 }

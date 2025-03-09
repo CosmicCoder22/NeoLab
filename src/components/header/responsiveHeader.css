@@ -5,7 +5,6 @@
             top: 0;
             left: 0;
             z-index: 100;
-            background-color: #ff6262;
         }
         .logoContainer img{
             height: 3em;
@@ -43,7 +42,7 @@
             padding: 0 2em 2em 2em;
             margin-top: 7vh;
             font-size: 1.5em;
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 1);
         }
         .mobileNavBtn{
             display: flex;
@@ -98,7 +97,7 @@
 
 /* Laptop */
 @media (min-width: 1024px) and
-        (max-width: 1439px) {
+        (max-width: 1440px) {
             .logoContainer img{
                 height: 3em;
             }

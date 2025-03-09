@@ -1,0 +1,185 @@
+@media (max-width: 767px) {
+    .homeBody{
+
+    }
+    .homeContent{
+        position: relative;
+    }
+    .homeText{
+        width: 100%; 
+        height: fit-content;
+        z-index: 10;
+    }
+    .homeText h1{
+        font-size: 2em;
+    }
+    .homeMainImage{
+        position: absolute;
+        top: 10;
+        right: 0;
+        width: fit-content;
+    }
+    .homeMainImage img{
+        height: 10em;
+    }
+    .homeMarquee{
+        margin: 3em 0em;
+    }
+    .homeMarquee p{
+        font-size: 1em;
+    }
+
+    .homeFacts{
+        flex-direction: column;
+        gap: 2em;
+        margin-bottom: 3em;
+    }
+    .factContainer{
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }   
+    .factImgName{
+        height: fit-content;
+    }
+    .factContainer span{
+        width: 80%;
+    }
+    .aboutUsText{
+        width: 100%;
+        justify-content: center;
+    }
+    .aboutUsLogo{
+        position: static;
+        width: 100%;
+    }
+    .aboutUsTextImg{
+        width: 100%;
+    }
+    .aboutUsLogoText{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        gap: 2em;
+    }
+    .aboutUsLogoImg{
+        width: 100%;
+    }
+    .aboutUsLogoImg img{ 
+        width: 100%;
+        height: 100%;
+    }
+    .aboutUsLogoVideo{
+        padding: 0;
+    }
+    .aboutUsLogoVideo video{
+        border-radius: 1em;
+    }
+    .aboutUsScroll {
+        margin-top: 1em;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .aboutUsScroll p{
+        font-size: 1em;
+    }
+    .aboutUsScroll h1{
+        font-size: 1.2em;
+    }
+    .aboutUsScroll span{
+        font-size: 1em;
+        color: grey;
+    }
+    .scrollSectors{
+        gap: .5em;
+    }
+    .scrollEffectContainer{
+        display: none;
+    }
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .link{
+        width: 100%;
+    }
+    .homeMarqueeFocus{
+        margin: .5em 0;
+        border-top: .1em solid black;
+        border-bottom: .1em solid black;
+    }
+    .homeMarqueeFocus p{
+        font-size: 1em;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and
+        (max-width: 1023px) {
+            .homeBody{
+                border: 1px solid blue;
+            }
+        }
+
+/* Laptop */
+@media (min-width: 1024px) and
+        (max-width: 1440px) {
+            .homeBody{
+                border: 1px solid green;
+            }
+            .homeMainImage img{
+                height: 30em;
+            }
+            .homeText{
+                border: 1px solid red;
+            }
+            .homeText h1{
+                border: 1px solid blue;
+                font-size: 3em;
+            }
+            .aboutUsText{
+                border: 1px solid red;
+            }
+            .aboutUsScroll{
+                border: 1px solid blue;
+            }
+            .aboutUsScroll p{
+                font-size: 1.4em;
+            }
+            .aboutUsScroll h1{
+                font-size: 1.7em;
+            }
+            .aboutUsScroll span{
+                font-size: 1em;
+                color: grey;
+            }
+            .scrollSector p{
+                font-size: 1em;
+                color: grey;
+            }
+        }
+
+    /* Desktop */
+@media (min-width: 1441px) {
+    .homeBody{
+        border: 1px solid yellow;
+    }
+    .homeContent{
+        position: relative;
+    }
+    .homeText{
+        width: 59.5em;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20em;
+        z-index: 10;
+    }
+    .homeMainImage{
+        width: 59.5em;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

@@ -2,22 +2,26 @@
 @media (max-width: 767px) {
         .footerBody{
             height: fit-content;
-            background-color: rgb(255, 0, 98);
         }
         .footerNav img{
             display: none;
         }
         .footerNavBtn{
-            border: 1px solid black;
             width: 100%;
+            align-items: center;
         }
         .address,
         .updates,
         .phone{
             font-size: .7em;
+            width: fit-content;
+            text-align: center;
         }
         .footerCopyright{
             font-size: .8em;
+        }
+        .footerCopyright{
+            gap: 1em;
         }
     }
 
