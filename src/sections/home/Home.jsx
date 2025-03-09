@@ -90,7 +90,6 @@ function Home() {
                   <img src={aboutUsLogoImg} alt="" />
                 </div>
               </div>
-
               <div className="aboutUsLogoVideo">
                 <video src={aboutUsLogoVideo}></video>
               </div>
@@ -132,6 +131,15 @@ function Home() {
                     voluptatem accusantium doloremque perspiciatis.
                   </p>
                 </div>
+                <div className="scrollSector">
+                  <FontAwesomeIcon icon={faMicroscope} />
+                  <h1>Predictive analytics in drug discovery</h1>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque perspiciatis.
+                  </p>
+                </div>
+
               </div>
             </div>
           </div>
@@ -145,7 +153,32 @@ function Home() {
               innovating to improve lives
             </div>
           </div>
-
+          <div className="links">
+            <div className="link Oncology">
+              <div className="linkText">
+                <h1>Oncology</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div className="link Neurology">
+              <div className="linkText">
+                <h1>Neurology</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div className="link InfectiousDiseases">
+              <div className="linkText">
+              <h1>Infectious diseases</h1>
+              <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div className="link Imunology">
+              <div className="linkText">
+              <h1>Imunology</h1>
+              <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
           <div className="homeMarqueeFocus">
             <div>
               <p className="item item1">
