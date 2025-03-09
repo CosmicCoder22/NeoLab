@@ -1,5 +1,4 @@
 .homeBody {
-    padding-top: 10vh;
 }
 .homeContent {
   display: flex;
@@ -7,11 +6,15 @@
   font-family: var(--serif-font);
 }
 .homeText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 50%;
+  height: 90vh;
+  gap: 5em;
 }
 .homeText p {
   width: 100%;
-  height: 40%;
   align-content: center;
   text-align: center;
   font-weight: 600;
@@ -99,20 +102,23 @@
   width: 50%;
   height: fit-content;
   position: sticky;
-  top: 7vh;
+  top: 10vh;
 }
 .aboutUsTextImg{
   width: 100%;
   display: flex;
-  padding-left: 2em;
+  padding-left: 1em;
   gap: 2em;
+  height: 20em;
 }
 .aboutUsLogoImg{
   display: flex;
   width: 50%;
+  height: 20em;
 }
 .aboutUsLogoImg img{
-  height: 30em;
+  width: 20em;
+  height: 20em;
 }
 .aboutUsLogoText{
   display: flex;
@@ -122,6 +128,7 @@
   background-color: #0984e3;
   border-radius: 2em;
   padding: 2em;
+  height: 20em;
 }
 .aboutUsLogoText p,
 .aboutUsLogoText span{
@@ -136,7 +143,7 @@
   display: flex;
   width: 100%;
   height: fit-content;
-  padding: 2em;
+  padding: 1em;
 }
 .aboutUsLogoVideo video{
   width: 100%;
@@ -155,7 +162,7 @@
   font-weight: 600;
 }
 .aboutUsScroll span{
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .scrollSectors{
   display: flex;
@@ -173,6 +180,7 @@
   color: rgb(255, 62, 62);
 }
 .scrollSector p{
+  font-size: 1em;
   color: #626263;
 }
 
@@ -197,7 +205,7 @@
   display: flex;
   gap: .2em;
   height: 50vh;
-  margin-top: 5em;
+  margin: 5em 0;
 }
 .link{
   width: 25%;
@@ -246,6 +254,8 @@
   background-repeat: no-repeat;
 }
 .homeMarqueeFocus{
+  border-bottom: .1em solid black;
+  border-top: .1em solid black;
   width: 95%;
   margin: auto;
   padding: 1em 0;

@@ -1,7 +1,4 @@
 @media (max-width: 767px) {
-    .homeBody{
-
-    }
     .homeContent{
         position: relative;
     }
@@ -9,6 +6,11 @@
         width: 100%; 
         height: fit-content;
         z-index: 10;
+        gap: 1em;
+    }
+    .homeText p{
+        text-align: start;
+        padding: 1em;
     }
     .homeText h1{
         font-size: 2em;
@@ -47,7 +49,7 @@
     }
     .aboutUsText{
         width: 100%;
-        justify-content: center;
+        flex-wrap: wrap;
     }
     .aboutUsLogo{
         position: static;
@@ -55,6 +57,11 @@
     }
     .aboutUsTextImg{
         width: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .aboutUsTextImg img{
+        display: none;
     }
     .aboutUsLogoText{
         width: 100%;
@@ -100,11 +107,13 @@
     .links{
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 3em;
     }
     .link{
         width: 100%;
     }
     .homeMarqueeFocus{
+        width: 100%;
         margin: .5em 0;
         border-top: .1em solid black;
         border-bottom: .1em solid black;
@@ -162,19 +171,8 @@
 
     /* Desktop */
 @media (min-width: 1441px) {
-    .homeBody{
-        border: 1px solid yellow;
-    }
     .homeContent{
         position: relative;
-    }
-    .homeText{
-        width: 59.5em;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        gap: 20em;
-        z-index: 10;
     }
     .homeMainImage{
         width: 59.5em;

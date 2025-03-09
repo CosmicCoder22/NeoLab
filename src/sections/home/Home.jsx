@@ -96,7 +96,7 @@ function Home() {
                 </div>
               </div>
               <div className="aboutUsLogoVideo">
-                <video src={aboutUsLogoVideo} autoPlay></video>
+                <video src={aboutUsLogoVideo} autoplay muted loop playsinline></video>
               </div>
             </div>
             <div className="aboutUsScroll">
