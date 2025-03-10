@@ -30,7 +30,13 @@
     .homeMarquee p{
         font-size: 1em;
     }
-
+    .homeAboutUs{
+        height: fit-content;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
     .homeFacts{
         flex-direction: column;
         gap: 2em;
@@ -43,6 +49,9 @@
     }   
     .factImgName{
         height: fit-content;
+        display: flex;
+        gap: 1em;
+        flex-direction: row;
     }
     .factContainer span{
         width: 80%;
@@ -50,15 +59,18 @@
     .aboutUsText{
         width: 100%;
         flex-wrap: wrap;
+        gap: .5em;
     }
     .aboutUsLogo{
         position: static;
         width: 100%;
+        gap: .5em;
     }
     .aboutUsTextImg{
         width: 100%;
         flex-wrap: wrap;
         padding: 0;
+        height: fit-content;
     }
     .aboutUsLogoText{
         width: 100%;
@@ -92,7 +104,7 @@
         color: grey;
     }
     .scrollSectors{
-        gap: .5em;
+        gap: 1.5em;
     }
     .scrollEffectContainer{
         display: none;
@@ -100,14 +112,19 @@
     .links{
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 3em;
+        margin: 0;
     }
     .link{
         width: 100%;
     }
+    .linkText h1{
+        font-size: 1em;
+    }
+    .linkText p{
+        font-size: .7em;
+    }
     .homeMarqueeFocus{
         width: 100%;
-        margin: .5em 0;
         border-top: .1em solid black;
         border-bottom: .1em solid black;
     }
@@ -118,6 +135,7 @@
         display: flex;
         flex-wrap: wrap;
         column-count: 2;
+        margin: 0;
     }
     .clientLogo{
         display: flex;
@@ -163,6 +181,12 @@
             .homeMarquee div{
                 width: 217%;
             }
+            .homeAboutUs{
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                margin: 0;
+            }
             .factContainer{
                 display: flex;
                 justify-content: center;
@@ -201,6 +225,10 @@
                 display: flex;
                 gap: 2em;
             }
+
+            .aboutUsLogoText span{
+                text-align: end;
+            }
             .aboutUsLogoImg{
                 display: none;
             }
@@ -211,7 +239,6 @@
                 border-radius: 1em;
             }
             .aboutUsScroll {
-                margin-top: 1em;
                 padding: 0;
                 width: 100%;
                 justify-content: center;
@@ -236,6 +263,7 @@
                 width: 100%;
             } 
             .scrollSector p{
+                font-size: 1em;
                 text-align: start;
             }
             .scrollLeft,
@@ -263,25 +291,44 @@
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
+                margin: 0;
             }
         }
 
 /* Laptop */
 @media (min-width: 1025px) and
         (max-width: 1440px) {
-            .homeBody{
+            .homeAboutUs{
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                margin: 0;
             }
             .homeMainImage img{
                 height: 30em;
+                position: absolute;
+                top: 0;
+                right: 0;
             }
             .homeText{
+                height: fit-content;
+                padding-top: 3em;
             }
             .homeText h1{
+                text-align: start;
                 font-size: 3em;
+                padding-left: 2em;
             }
-            .aboutUsText{
+            .homeMarquee div{
+                width: 321%;
             }
-            .aboutUsScroll{
+            .factContainer{
+                width: fit-content;
+            }
+            .factImgName{
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
             }
             .aboutUsScroll p{
                 font-size: 1.4em;
@@ -296,6 +343,19 @@
             .scrollSector p{
                 font-size: 1em;
                 color: grey;
+            }
+            .scrollLeft,
+            .scrollRight{
+                position: relative;
+                display: flex;
+                align-items: center;
+                font-size: 3em;
+                font-weight: 700;
+                justify-content: center;
+                width: fit-content;
+            }
+            .homeMarqueeFocus div{
+                width: 267%;
             }
         }
 

@@ -19,6 +19,7 @@ import {
   faPills,
   faHexagonNodes,
   faMicroscope,
+  faDna
 } from "@fortawesome/free-solid-svg-icons";
 
 import client1 from '../../assets/client1.webp'
@@ -63,7 +64,9 @@ function Home() {
             <div className="factContainer">
               <div className="factImgName">
                 <img src={factImgTarget} alt="" />
-                <span>Target identification</span>                
+                <span>
+                  Target <br /> identification
+                </span>
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -73,7 +76,10 @@ function Home() {
             <div className="factContainer">
               <div className="factImgName">
                 <img src={factImgCompound} alt="" />
-                <span>Compound screening</span>                
+                <span>
+                  Compound <br />
+                  screening
+                </span>
               </div>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -81,10 +87,13 @@ function Home() {
               </p>
             </div>
             <div className="factContainer">
-            <div className="factImgName">
-              <img src={factImgPreclinical} alt="" />
-              <span>Preclinical testing</span>
-            </div>
+              <div className="factImgName">
+                <img src={factImgPreclinical} alt="" />
+                <span>
+                  Preclinical <br />
+                  testing
+                </span>
+              </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur, at!
@@ -103,60 +112,75 @@ function Home() {
                 </div>
               </div>
               <div className="aboutUsLogoVideo">
-                <video src={aboutUsLogoVideo} autoplay muted loop playsinline></video>
+                <video
+                  src={aboutUsLogoVideo}
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                ></video>
               </div>
             </div>
             <div className="aboutUsScroll">
-              <p>About us</p>
-              <h1>Pioneering innovation in drug discovery</h1>
-              <span>
-                Sed ut perspiciatis unde omnis iste natus ut perspic iatis unde
-                omnis iste perspiciatis ut perspiciatis unde omnis iste natus.
-                Sed ut perspiciatis unde omnis iste natus.
-              </span>
-              <span>
-                Perspic iatis unde omnis iste perspiciatis ut perspiciatis unde
-                omnis iste natus. Sed ut perspiciatis.
-              </span>
-              <div className="scrollSectors">
-                <div className="scrollSector">
-                  <FontAwesomeIcon icon={faPills} />
-                  <h1>AI in drug design</h1>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque perspiciatis.
-                  </p>
+              <div className="aboutUsScrollInner">
+                <p>About us</p>
+                <h1>Pioneering innovation in drug discovery</h1>
+                <span>
+                  Sed ut perspiciatis unde omnis iste natus ut perspic iatis
+                  unde omnis iste perspiciatis ut perspiciatis unde omnis iste
+                  natus. Sed ut perspiciatis unde omnis iste natus.
+                </span>
+                <span>
+                  Perspic iatis unde omnis iste perspiciatis ut perspiciatis
+                  unde omnis iste natus. Sed ut perspiciatis.
+                </span>
+                <div className="scrollSectors">
+                  <div className="scrollSector">
+                    <FontAwesomeIcon icon={faPills} />
+                    <h1>AI in drug design</h1>
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque perspiciatis.
+                    </p>
+                  </div>
+                  <div className="scrollSector">
+                    <FontAwesomeIcon icon={faHexagonNodes} />
+                    <h1>Molecular modeling</h1>
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque perspiciatis.
+                    </p>
+                  </div>
+                  <div className="scrollSector">
+                    <FontAwesomeIcon icon={faMicroscope} />
+                    <h1>Automated high-throughput screening</h1>
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque perspiciatis.
+                    </p>
+                  </div>
+                  <div className="scrollSector">
+                    <FontAwesomeIcon icon={faMicroscope} />
+                    <h1>Predictive analytics in drug discovery</h1>
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque perspiciatis.
+                    </p>
+                  </div>
+                  <div className="scrollSector">
+                    <FontAwesomeIcon icon={faDna} />
+                    <h1>Genomic data analysis</h1>
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque perspiciatis.
+                    </p>
+                  </div>
                 </div>
-                <div className="scrollSector">
-                  <FontAwesomeIcon icon={faHexagonNodes} />
-                  <h1>Molecular modeling</h1>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque perspiciatis.
-                  </p>
-                </div>
-                <div className="scrollSector">
-                  <FontAwesomeIcon icon={faMicroscope} />
-                  <h1>Automated high-throughput screening</h1>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque perspiciatis.
-                  </p>
-                </div>
-                <div className="scrollSector">
-                  <FontAwesomeIcon icon={faMicroscope} />
-                  <h1>Predictive analytics in drug discovery</h1>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque perspiciatis.
-                  </p>
-                </div>
-
               </div>
             </div>
           </div>
           <div className="scrollEffectContainer">
-            <div className="scrollLeft" >
+            <div className="scrollLeft">
               Advancing medicine, <img src={scrollPills} alt="" />
             </div>
 
@@ -180,16 +204,17 @@ function Home() {
             </div>
             <div className="link InfectiousDiseases">
               <div className="linkText">
-              <h1>Infectious diseases</h1>
-              <p>Lorem ipsum dolor sit amet.</p>
+                <h1>Infectious diseases</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
             <div className="link Imunology">
               <div className="linkText">
-              <h1>Imunology</h1>
-              <p>Lorem ipsum dolor sit amet.</p>
+                <h1>Imunology</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
+          </div>
           </div>
           <div className="homeMarqueeFocus">
             <div>
@@ -202,7 +227,6 @@ function Home() {
                 # FOCUS # FOCUS
               </p>
             </div>
-          </div>
         </div>
         <div className="clients">
           <div className="clientLogo">
