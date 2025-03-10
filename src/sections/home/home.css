@@ -1,4 +1,7 @@
 .homeBody {
+  background-image: url(/src/assets/homeBackground.webp);
+  background-position: center;
+  background-size: cover;
 }
 .homeContent {
   display: flex;
@@ -47,7 +50,7 @@
 .homeMarquee div {
     display: flex;
     width: 200%;
-    animation: homeMarquee 25s linear infinite;
+    animation: homeMarquee 8s linear infinite;
 }
 
 .homeMarquee p {
@@ -266,7 +269,7 @@
 .homeMarqueeFocus div {
   display: flex;
   width: 203%;
-  animation: homeMarqueeFocus 25s linear infinite;
+  animation: homeMarqueeFocus 8s linear infinite;
 }
 
 .homeMarqueeFocus p {
@@ -280,3 +283,16 @@
   100%{transform: translateX(-50%);}
 }
 
+.clients{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 4em;
+}
+.clientLogo img{
+  opacity: .25;
+  transition: all .2s ease-in-out;
+}
+.clientLogo img:hover{
+  opacity: 1;
+}

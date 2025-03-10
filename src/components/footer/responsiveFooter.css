@@ -27,26 +27,20 @@
 
 /* Tablet */
 @media (min-width: 768px) and
-        (max-width: 1023px) {
-            .footerBody{
-                background-color: rgb(172, 120, 255);
-            }
+        (max-width: 1024px) {
             .address,
             .updates{
                 
                 width: fit-content;
             }
             .footerNavBtn{
-                border: 1px solid red;
                 justify-content: space-between;
             }
-            .footerNavBtn button{
-                border: 1px solid black;
-            }
+
         }
 
 /* Laptop */
-@media (min-width: 1024px) and
+@media (min-width: 1025px) and
         (max-width: 1439px) {
             .footerBody{
                 background-color: aquamarine;

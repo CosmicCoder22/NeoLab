@@ -21,6 +21,13 @@ import {
   faMicroscope,
 } from "@fortawesome/free-solid-svg-icons";
 
+import client1 from '../../assets/client1.webp'
+import client2 from '../../assets/client2.webp'
+import client3 from '../../assets/client3.webp'
+import client4 from '../../assets/client4.webp'
+import client5 from '../../assets/client5.webp'
+import client6 from '../../assets/client6.webp'
+
 function Home() {
 
 
@@ -195,6 +202,26 @@ function Home() {
                 # FOCUS # FOCUS
               </p>
             </div>
+          </div>
+        </div>
+        <div className="clients">
+          <div className="clientLogo">
+            <img src={client1} alt="" />
+          </div>
+          <div className="clientLogo">
+            <img src={client2} alt="" />
+          </div>
+          <div className="clientLogo">
+            <img src={client3} alt="" />
+          </div>
+          <div className="clientLogo">
+            <img src={client4} alt="" />
+          </div>
+          <div className="clientLogo">
+            <img src={client5} alt="" />
+          </div>
+          <div className="clientLogo">
+            <img src={client6} alt="" />
           </div>
         </div>
       </div>

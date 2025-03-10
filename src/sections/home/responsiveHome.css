@@ -60,9 +60,6 @@
         flex-wrap: wrap;
         padding: 0;
     }
-    .aboutUsTextImg img{
-        display: none;
-    }
     .aboutUsLogoText{
         width: 100%;
         height: fit-content;
@@ -70,11 +67,7 @@
         gap: 2em;
     }
     .aboutUsLogoImg{
-        width: 100%;
-    }
-    .aboutUsLogoImg img{ 
-        width: 100%;
-        height: 100%;
+        display: none;
     }
     .aboutUsLogoVideo{
         padding: 0;
@@ -121,37 +114,174 @@
     .homeMarqueeFocus p{
         font-size: 1em;
     }
+    .clients{
+        display: flex;
+        flex-wrap: wrap;
+        column-count: 2;
+    }
+    .clientLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .clientLogo img{
+        opacity: 1;
+    }
 }
 
 /* Tablet */
 @media (min-width: 768px) and
-        (max-width: 1023px) {
-            .homeBody{
-                border: 1px solid blue;
+        (max-width: 1024px) {
+            .homeContent{
+                position: relative;
+            }
+            .homeText{
+                height: fit-content;
+                gap: 2em;
+                margin-top: 3em;
+                width: 60%;
+                z-index: 10;
+            }
+                .homeText p{
+                    font-size: .8em;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+                .homeText h1{
+                    font-size: 3em;
+                }
+                .homeMainImage img{
+                    height: 22em;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            .homeMarquee p{
+                font-size: 1.5em;
+            }
+            .homeMarquee div{
+                width: 217%;
+            }
+            .factContainer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: fit-content;
+                height: 100%;
+                padding: 2em 0;
+            }
+            .factImgName{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .factImgName span{
+                text-align: center;
+            }
+            .aboutUsText{
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            .aboutUsLogo{
+                position: static;
+                width: 100%;
+                display: flex;
+                gap: 2em;
+            }
+            .aboutUsTextImg{
+                width: 100%;
+                flex-wrap: wrap;
+                padding: 0;
+                height: fit-content;
+            }
+            .aboutUsLogoText{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                gap: 2em;
+            }
+            .aboutUsLogoImg{
+                display: none;
+            }
+            .aboutUsLogoVideo{
+                padding: 0;
+            }
+            .aboutUsLogoVideo video{
+                border-radius: 1em;
+            }
+            .aboutUsScroll {
+                margin-top: 1em;
+                padding: 0;
+                width: 100%;
+                justify-content: center;
+            }
+            .aboutUsScroll p{
+                font-size: 2em;
+                text-align: center;
+            }
+            .aboutUsScroll h1{
+                font-size: 1.2em;
+            }
+            .aboutUsScroll span{
+                font-size: 1em;
+                color: grey;
+            }
+            .scrollSectors{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-count: 2;
+            }
+            .scrollSector{
+                width: 100%;
+            } 
+            .scrollSector p{
+                text-align: start;
+            }
+            .scrollLeft,
+            .scrollRight{
+                display: flex;
+                align-items: center;
+                font-size: 2em;
+                align-content: center;
+            }
+            .links{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-count: 2;
+            }
+            .link{
+                width: 100%;
+            }
+            .homeMarqueeFocus p{
+                font-size: 1.5em;
+            }
+            .homeMarqueeFocus div{
+                width: 226%;
+            }
+            .clients{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
             }
         }
 
 /* Laptop */
-@media (min-width: 1024px) and
+@media (min-width: 1025px) and
         (max-width: 1440px) {
             .homeBody{
-                border: 1px solid green;
             }
             .homeMainImage img{
                 height: 30em;
             }
             .homeText{
-                border: 1px solid red;
             }
             .homeText h1{
-                border: 1px solid blue;
                 font-size: 3em;
             }
             .aboutUsText{
-                border: 1px solid red;
             }
             .aboutUsScroll{
-                border: 1px solid blue;
             }
             .aboutUsScroll p{
                 font-size: 1.4em;
