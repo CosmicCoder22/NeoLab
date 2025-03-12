@@ -42,7 +42,5 @@
 /* Laptop */
 @media (min-width: 1025px) and
         (max-width: 1439px) {
-            .footerBody{
-                background-color: aquamarine;
-            }
+            
         }

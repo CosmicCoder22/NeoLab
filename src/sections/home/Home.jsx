@@ -2,17 +2,17 @@ import React from "react";
 import "./home.css";
 import './responsiveHome.css'
 
-import homeMainImage from "../../assets/clearPill.webp";
+import homeMainImage from "../../assets/homePage/clearPill.webp";
 
-import factImgTarget from "../../assets/target.webp";
-import factImgCompound from "../../assets/compound.webp";
-import factImgPreclinical from "../../assets/preclinical.webp";
+import factImgTarget from "../../assets/homePage/target.webp";
+import factImgCompound from "../../assets/homePage/compound.webp";
+import factImgPreclinical from "../../assets/homePage/preclinical.webp";
 
-import aboutUsLogoImg from "../../assets/abouUsLogoImg.webp";
-import aboutUsLogoVideo from "../../assets/aboutUsLogoVideo.webm";
+import aboutUsLogoImg from "../../assets/homePage/abouUsLogoImg.webp";
+import aboutUsLogoVideo from "../../assets/homePage/aboutUsLogoVideo.webm";
 
-import scrollPills from "../../assets/scrollAnim1.webp";
-import scrollDna from "../../assets/scrollAnim2.webp";
+import scrollPills from "../../assets/homePage/scrollAnim1.webp";
+import scrollDna from "../../assets/homePage/scrollAnim2.webp";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -22,12 +22,12 @@ import {
   faDna
 } from "@fortawesome/free-solid-svg-icons";
 
-import client1 from '../../assets/client1.webp'
-import client2 from '../../assets/client2.webp'
-import client3 from '../../assets/client3.webp'
-import client4 from '../../assets/client4.webp'
-import client5 from '../../assets/client5.webp'
-import client6 from '../../assets/client6.webp'
+import client1 from '../../assets/homePage/client1.webp'
+import client2 from '../../assets/homePage/client2.webp'
+import client3 from '../../assets/homePage/client3.webp'
+import client4 from '../../assets/homePage/client4.webp'
+import client5 from '../../assets/homePage/client5.webp'
+import client6 from '../../assets/homePage/client6.webp'
 
 function Home() {
 

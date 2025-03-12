@@ -1,0 +1,127 @@
+.laboratoryAnalisysBody{
+
+}
+.laboratoryAnalisysContent{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--serif-font);
+}
+.analisysLogo{
+    height: 90vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logoTop,
+.logoMidle,
+.logoBottom{
+    font-size: 5em;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.logoTop img,
+.logoBottom img{
+    height: 2em;
+}
+.logoTop{
+    justify-content: start;
+}
+.logoMidle{
+    justify-content: center;
+}
+.logoBottom{
+    justify-content: end;
+}
+.laboratoryAnalisysLine{
+    height: 1px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.ourServices{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.ourServices P{
+    font-weight: 600;
+}
+.ourServicesContainer{
+    display: flex;
+    gap: 1em;
+}
+.ourServices p{
+    width: 100%;
+}
+.ourServices h1{
+    width: 100%;
+}
+.servicesContainer{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    cursor: pointer;
+    position: relative;
+}
+.servicesContainer::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: rgb(173, 173, 173);
+    width: 100%;
+}
+.servicesContainer::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: black;
+    width: 0;
+    transition: all .4s ease-in-out;
+}
+.servicesContainer:hover::after{
+    width: 100%;
+}
+.servicesContainer img{
+    width: 100%;
+    border-radius: 5%;
+}
+.servicesNameContainer{
+    display: flex;
+    overflow: hidden;
+}
+.servicesContainer p{
+    width: 1.5em;
+    font-size: 2em;
+}
+.servicesContainer span{
+    width: fit-content;
+    font-size: 2em;
+    font-weight: 500;
+}
+.serviceName{
+    display: flex;
+    transform: translateX(-1.5em);
+    transition: all .3s ease-in-out;
+}
+.serviceNumber{
+    display: flex;
+    transform: translateX(-100%);
+    transition: all .3s ease-in-out;
+}
+.servicesContainer:hover .serviceName{
+    transform: translateX(0);
+}
+.servicesContainer:hover .serviceNumber{
+    transform: translateX(0);
+}
