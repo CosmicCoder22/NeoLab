@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import './responsiveHome.css'
+import "./responsiveHome.css";
 
 import homeMainImage from "../../assets/homePage/clearPill.webp";
 
@@ -19,19 +19,17 @@ import {
   faPills,
   faHexagonNodes,
   faMicroscope,
-  faDna
+  faDna,
 } from "@fortawesome/free-solid-svg-icons";
 
-import client1 from '../../assets/homePage/client1.webp'
-import client2 from '../../assets/homePage/client2.webp'
-import client3 from '../../assets/homePage/client3.webp'
-import client4 from '../../assets/homePage/client4.webp'
-import client5 from '../../assets/homePage/client5.webp'
-import client6 from '../../assets/homePage/client6.webp'
+import client1 from "../../assets/homePage/client1.webp";
+import client2 from "../../assets/homePage/client2.webp";
+import client3 from "../../assets/homePage/client3.webp";
+import client4 from "../../assets/homePage/client4.webp";
+import client5 from "../../assets/homePage/client5.webp";
+import client6 from "../../assets/homePage/client6.webp";
 
 function Home() {
-
-
   return (
     <div className="homeBody">
       <div className="homeContent">
@@ -215,18 +213,18 @@ function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="homeMarqueeFocus">
+          <div>
+            <p className="item item1">
+              # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS #
+              FOCUS # FOCUS
+            </p>
+            <p className="item item2">
+              # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS #
+              FOCUS # FOCUS
+            </p>
           </div>
-          <div className="homeMarqueeFocus">
-            <div>
-              <p className="item item1">
-                # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS
-                # FOCUS # FOCUS
-              </p>
-              <p className="item item2">
-                # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS # FOCUS
-                # FOCUS # FOCUS
-              </p>
-            </div>
         </div>
         <div className="clients">
           <div className="clientLogo">

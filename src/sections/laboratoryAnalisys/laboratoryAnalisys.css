@@ -3,7 +3,7 @@
 }
 .laboratoryAnalisysContent{
     display: flex;
-    gap: 2em;
+    gap: 5em;
     align-items: center;
     flex-direction: column;
     font-family: var(--serif-font);
@@ -42,6 +42,7 @@
     height: 1px;
     border-bottom: 1px solid black;
     width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 15%, black 90%, transparent);
 }
 .ourServices{
     width: 95%;
@@ -70,6 +71,13 @@
     cursor: pointer;
     position: relative;
 }
+.servicesImgContainer{
+    overflow: hidden;
+    border-radius: 5%;
+}
+.servicesContainer:hover img{
+    transform: scale(1.2);
+}
 .servicesContainer::before{
     content: '';
     position: absolute;
@@ -95,6 +103,7 @@
 .servicesContainer img{
     width: 100%;
     border-radius: 5%;
+    transition: all .3s ease-in-out;
 }
 .servicesNameContainer{
     display: flex;
@@ -124,4 +133,140 @@
 }
 .servicesContainer:hover .serviceNumber{
     transform: translateX(0);
+}
+.counters{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+}
+.counterContainer{
+    width: 15%;
+    text-align: center;
+}
+.counterContainer h1{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.counter{
+    font-size: 4em;
+    font-weight: 600;
+}
+.laboratoryAnalisysVideo{
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.laboratoryAnalisysVideo video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.laboratoryAnalisysFacts{
+    display: flex;
+    gap: 1em;
+    width: 90em;
+}
+.laboratoryFactContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    height: fit-content;
+    align-items: center;
+    width: 25%;
+    padding: 4em 1em;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.laboratoryFactContainer:hover{
+    background-color: #0984e3;
+}
+
+.laboratoryAnalisysFactsIcon{
+    height: 4em;
+    color: #0984e3;
+    transition: all .3s ease-in-out;
+}
+.laboratoryAnalisysFactsName{
+    font-size: 1.3em;
+    transition: all .3s ease-in-out;
+    color: black;
+}
+.laboratoryAnalisysFactsDescription{
+    font-size: 1em;
+    color: grey;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+.laboratoryFactContainer:hover .laboratoryAnalisysFactsIcon,
+.laboratoryFactContainer:hover .laboratoryAnalisysFactsName,
+.laboratoryFactContainer:hover .laboratoryAnalisysFactsDescription {
+    color: white;
+}
+.environmentalImpact{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.environmentalImpactImages{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    left: 0;
+}
+.environmentalImpactImage{
+    height: 80%;
+    border-radius: 20px;
+}
+.environmentalImpactBackground{
+    display: flex;
+    padding-left: 20em;
+    gap: 3em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    width: 60%;
+    border-radius: 3%;
+    background-color: #f7f6f9;
+}
+.environmentalImpactName {
+    font-weight: 600;
+}
+.environmentalImpactDescription{
+    color: grey;
+    width: 60%;
+}
+.environmentalImpactList{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.environmentalImpactListItem{
+    display: flex;
+    gap: 1em;
+}
+.ourTeamButton{
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+.ourTeamButton:hover{
+    background-color: #b93c2f;
 }
