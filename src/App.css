@@ -25,14 +25,13 @@
 }
 :root{
   --serif-font: "Open Sans", serif;
-  --light-text:  #ffffff;
+  --light-text: #ffffff;
   --dark-text: #090116;
   --grey: #505050;
   --mobile-font: .6em;
   --laptop-font: .8em;
   --desktop-font: 1em;
 }
-
 body{
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -40,8 +39,6 @@ body{
 .appBody{
   position: relative;
 }
-.screenSize{
-  border: 1px solid red;
-  position: sticky;
-  top: 0;
+.appContent{
+  transform: translateY(-7vh);
 }

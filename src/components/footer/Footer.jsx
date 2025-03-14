@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareXTwitter, faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faCompass} from "@fortawesome/free-solid-svg-icons";
 
-function Footer({ setActiveSection, setActiveHeaderBtn }) {
+function Footer({ setActiveSection, setActiveHeaderBtn, isDarkText }) {
   return (
-    <div className="footerBody">
+    <div className={`footerBody${isDarkText ? "darkBackground" : ""}`}>
       <div className="footerLogo">
         <div className="footerNav">
           <img src={footerLogo} alt="" />

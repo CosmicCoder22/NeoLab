@@ -1,5 +1,5 @@
 .laboratoryAnalisysBody{
-
+    margin-top: 7vh;
 }
 .laboratoryAnalisysContent{
     display: flex;
@@ -40,9 +40,9 @@
 }
 .laboratoryAnalisysLine{
     height: 1px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--dark-text);
     width: 100%;
-    mask-image: linear-gradient(to right, transparent, black 15%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, var(--dark-text) 15%, var(--dark-text) 90%, transparent);
 }
 .ourServices{
     width: 95%;
@@ -93,7 +93,7 @@
     bottom: 0;
     left: 0;
     height: 1px;
-    background-color: black;
+    background-color: var(--dark-text);
     width: 0;
     transition: all .4s ease-in-out;
 }
@@ -193,7 +193,7 @@
 .laboratoryAnalisysFactsName{
     font-size: 1.3em;
     transition: all .3s ease-in-out;
-    color: black;
+    color: var(--dark-text);
 }
 .laboratoryAnalisysFactsDescription{
     font-size: 1em;
@@ -204,7 +204,7 @@
 .laboratoryFactContainer:hover .laboratoryAnalisysFactsIcon,
 .laboratoryFactContainer:hover .laboratoryAnalisysFactsName,
 .laboratoryFactContainer:hover .laboratoryAnalisysFactsDescription {
-    color: white;
+    color: var(--light-text);
 }
 .environmentalImpact{
     height: 90vh;
@@ -258,8 +258,8 @@
 }
 .ourTeamButton{
     border: none;
-    background-color: #e74c3c;
-    color: white;
+    background-color: #ff3333;
+    color: var(--light-text);
     padding: 1em 2em;
     font-size: 1.2em;
     border-radius: 10px;
@@ -268,5 +268,5 @@
     cursor: pointer;
 }
 .ourTeamButton:hover{
-    background-color: #b93c2f;
+    background-color: #d82b2b;
 }

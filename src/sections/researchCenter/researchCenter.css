@@ -1,0 +1,68 @@
+.researchCenterBody{}
+.researchCenterContent{
+    font-family: var(--serif-font);
+    background-color: #181818;
+}
+.researchCenterLogo{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.researchCenterLogo img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.researchCenterLogoText{
+    width: 50%;
+    height: 100%;
+    color: var(--light-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.researchCenterLogoText div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+}
+.researchCenterLogoText p{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: start;
+}
+.researchCenterLogoText h1{
+    font-size: 4em;
+}
+.researchCenterLogoText button{
+    border: none;
+    background-color: #ff3333;
+    color: var(--light-text);
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+.researchCenterLogoText button:hover{
+    background-color: #d82b2b;
+}
+.researchCenterLogoVideo{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.researchCenterLogoVideo video{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

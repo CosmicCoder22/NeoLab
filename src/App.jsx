@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './components/header/Header'
 import Home from './sections/home/Home'
@@ -7,6 +7,8 @@ import ResearchCenter from './sections/researchCenter/ResearchCenter'
 import Footer from './components/footer/Footer'
 
 function App() {
+
+  const [isDarkText, setisDarkText] = useState(true)
   
   const [activeHeaderBtn, setActiveHeaderBtn] = useState('home')
 
@@ -14,13 +16,13 @@ function App() {
 
   return (
     <div className="appBody">
-        <Header setActiveSection={setActiveSection} setActiveHeaderBtn={setActiveHeaderBtn} activeHeaderBtn={activeHeaderBtn}/>
+        <Header isDarkText={isDarkText} setisDarkText={setisDarkText} setActiveSection={setActiveSection} setActiveHeaderBtn={setActiveHeaderBtn} activeHeaderBtn={activeHeaderBtn}/>
         <div className="appContent">
           {activeSection === 'home' && (<Home />)}
           {activeSection === 'analisys' && (<LaboratoryAnalisys />)}
           {activeSection === 'research' && (<ResearchCenter />)}          
         </div>
-        <Footer setActiveSection={setActiveSection} setActiveHeaderBtn={setActiveHeaderBtn}/>
+        <Footer isDarkText={isDarkText} setActiveSection={setActiveSection} setActiveHeaderBtn={setActiveHeaderBtn}/>
         
     </div>
   )

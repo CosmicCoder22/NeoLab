@@ -1,27 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './header.css'
 import './responsiveHeader.css'
-import logo from '../../assets/logoDark.png'
+import logoDark from '../../assets/logoDark.png'
+import logoLight from '../../assets/logoLight.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareXTwitter, faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faCompass, faBars, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 
-function Header({ setActiveSection, setActiveHeaderBtn, activeHeaderBtn }) {
+function Header({ setActiveSection, setActiveHeaderBtn, activeHeaderBtn, isDarkText, setisDarkText }) {
 
   const [isToggleOpen, setIsToggleOpen] = useState(false)
 
   return (
-    <div className='headerBody' id='home'>
+    <div className={`headerBody ${isDarkText ? "blurred" : "clear"}`} >
         <div className="headerContent">
             <div className="logoContainer">
-                <img src={logo} alt="" />
+                <img src={isDarkText ? logoDark : logoLight} alt="" />
             </div>
             <div className="navContainer">
-                <button className={activeHeaderBtn === 'home' ? 'activeNavBtn' : 'navBtn'} onClick={() => {setActiveSection('home');setActiveHeaderBtn('home')}}>HOME</button>
-                <button className={activeHeaderBtn === 'analisys' ? 'activeNavBtn' : 'navBtn'} onClick={() => {setActiveSection('analisys');setActiveHeaderBtn('analisys')}}>LABORATORY ANALISYS</button>
-                <button className={activeHeaderBtn === 'research' ? 'activeNavBtn' : 'navBtn'} onClick={() => {setActiveSection('research');setActiveHeaderBtn('research')}}>RESEARCH CENTER</button>
+                <button className={`${activeHeaderBtn === 'home' ? 'activeNavBtn' : 'navBtn'} ${!isDarkText ? 'clear' : ''}`} onClick={() => {setActiveSection('home');setActiveHeaderBtn('home');setisDarkText(true)}}>HOME</button>
+                <button className={`${activeHeaderBtn === 'analisys' ? 'activeNavBtn' : 'navBtn'} ${!isDarkText ? 'clear' : ''}`} onClick={() => {setActiveSection('analisys');setActiveHeaderBtn('analisys');setisDarkText(true)}}>LABORATORY ANALISYS</button>
+                <button className={`${activeHeaderBtn === 'research' ? 'activeNavBtn' : 'navBtn'} ${!isDarkText ? 'clear' : ''}`} onClick={() => {setActiveSection('research');setActiveHeaderBtn('research');setisDarkText(false)}}>RESEARCH CENTER</button>
             </div>
             <div className="headerSocialIconsContainer">
             <div className="socialIcon"><FontAwesomeIcon icon={faCompass} /></div>

@@ -6,7 +6,9 @@
     gap: 2em;
     font-family: var(--serif-font);
 }
-
+.darkBackground{
+    background-color: #181818;
+}
 .footerLogo{
     width: 70%;
     display: flex;
