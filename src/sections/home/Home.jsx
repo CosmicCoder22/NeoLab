@@ -22,12 +22,9 @@ import {
   faDna,
 } from "@fortawesome/free-solid-svg-icons";
 
-import client1 from "../../assets/homePage/client1.webp";
-import client2 from "../../assets/homePage/client2.webp";
-import client3 from "../../assets/homePage/client3.webp";
-import client4 from "../../assets/homePage/client4.webp";
-import client5 from "../../assets/homePage/client5.webp";
-import client6 from "../../assets/homePage/client6.webp";
+import OurClients from "../../components/ourClients/ourClients";
+
+import Marquee from "react-fast-marquee";
 
 function Home() {
   return (
@@ -46,16 +43,18 @@ function Home() {
           <img src={homeMainImage} alt="" />
         </div>
         <div className="homeMarquee">
-          <div>
-            <p className="item item1">
+          <Marquee speed={100}>
+            <p className="text-lg font-bold mx-10">
+              {" "}
               # INNOVATION TODAY # INNOVATION TODAY # INNOVATION TODAY #
-              INNOVATION TODAY
+              INNOVATION TODAY # INNOVATION TODAY # INNOVATION TODAY
             </p>
-            <p className="item item2">
+            <p className="text-lg font-bold mx-10">
+              {" "}
               # INNOVATION TODAY # INNOVATION TODAY # INNOVATION TODAY #
-              INNOVATION TODAY
+              INNOVATION TODAY # INNOVATION TODAY # INNOVATION TODAY
             </p>
-          </div>
+          </Marquee>
         </div>
         <div className="homeAboutUs">
           <div className="homeFacts">
@@ -226,26 +225,7 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="clients">
-          <div className="clientLogo">
-            <img src={client1} alt="" />
-          </div>
-          <div className="clientLogo">
-            <img src={client2} alt="" />
-          </div>
-          <div className="clientLogo">
-            <img src={client3} alt="" />
-          </div>
-          <div className="clientLogo">
-            <img src={client4} alt="" />
-          </div>
-          <div className="clientLogo">
-            <img src={client5} alt="" />
-          </div>
-          <div className="clientLogo">
-            <img src={client6} alt="" />
-          </div>
-        </div>
+        <OurClients />
       </div>
     </div>
   );

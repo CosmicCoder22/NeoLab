@@ -38,11 +38,19 @@
 .logoBottom{
     justify-content: end;
 }
-.laboratoryAnalisysLine{
-    height: 1px;
-    border-bottom: 1px solid var(--dark-text);
-    width: 100%;
-    mask-image: linear-gradient(to right, transparent, var(--dark-text) 15%, var(--dark-text) 90%, transparent);
+.laboratoryAnalisysMarquee{
+    width: 95%;
+    margin: auto;
+    padding: 1em 0;
+    margin-top: 3em;
+    overflow: hidden;
+    border-top: 2px solid var(--dark-text);
+    border-bottom: 2px solid var(--dark-text);
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+.laboratoryAnalisysMarquee p{
+  padding-right: .2em;
+  font-size: 2em;
 }
 .ourServices{
     width: 95%;

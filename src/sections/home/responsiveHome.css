@@ -24,9 +24,6 @@
     .homeMainImage img{
         height: 10em;
     }
-    .homeMarquee{
-        margin: 3em 0em;
-    }
     .homeMarquee p{
         font-size: 1em;
     }
@@ -178,9 +175,6 @@
             .homeMarquee p{
                 font-size: 1.5em;
             }
-            .homeMarquee div{
-                width: 217%;
-            }
             .homeAboutUs{
                 display: flex;
                 flex-direction: column;
@@ -284,9 +278,6 @@
             .homeMarqueeFocus p{
                 font-size: 1.5em;
             }
-            .homeMarqueeFocus div{
-                width: 226%;
-            }
             .clients{
                 width: 100%;
                 display: flex;
@@ -353,9 +344,6 @@
                 font-weight: 700;
                 justify-content: center;
                 width: fit-content;
-            }
-            .homeMarqueeFocus div{
-                width: 267%;
             }
         }
 

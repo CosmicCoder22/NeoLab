@@ -1,0 +1,36 @@
+@media (max-width: 767px) {
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 2;
+    margin: 0;
+  }
+  .clientLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .clientLogo img {
+    height: 4em;
+  }
+  .clientLogo img {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .clients {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .clientLogo img {
+    height: 4em;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .clientLogo img {
+    height: 4em;
+  }
+}

@@ -16,6 +16,8 @@ import laboratoryAnalisysVideo from '../../assets/LaboratoryAnalisysPage/laborat
 import environmentalImpactImageHands from '../../assets/LaboratoryAnalisysPage/environmentalImpactImageHands.jpg'
 import environmentalImpactImageScientists from '../../assets/LaboratoryAnalisysPage/environmentalImpactImageScientists.jpg'
 
+import Marquee from "react-fast-marquee";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPills,
@@ -65,7 +67,12 @@ function LaboratoryAnalisys() {
             <h1>results</h1>
           </div>
         </div>
-        <div className="laboratoryAnalisysLine"></div>
+        <div className="laboratoryAnalisysMarquee">
+            <Marquee speed={100}>
+              <p className="text-lg font-bold mx-10"> " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US</p>
+              <p className="text-lg font-bold mx-10"> " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US</p>
+            </Marquee>
+        </div>
         <div className="ourServices">
           <p>welcome to NeoLab</p>
           <h1>Our laboratory services</h1>
@@ -84,9 +91,6 @@ function LaboratoryAnalisys() {
         </div>
         <div className="laboratoryAnalisysVideo">
           <video src={laboratoryAnalisysVideo} autoPlay muted loop/>
-        </div>
-        <div className="laboratoryAnalisysMarquee">
-          laboratory Analisys Marquee
         </div>
         <div className="laboratoryAnalisysFacts">
           <LaboratoryFact svg={<FontAwesomeIcon icon={faMicroscope} className="laboratoryAnalisysFactsIcon"/>} name="Free tailored solutions" description="Lorem ipsum dolor sit amet consectetur adipisicing." />
