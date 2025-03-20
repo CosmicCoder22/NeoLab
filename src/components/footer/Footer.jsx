@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import "./responsiveFooter.css";
+import { motion } from "framer-motion";
 
 import footerLogo from "../../assets/logoDark.png";
 

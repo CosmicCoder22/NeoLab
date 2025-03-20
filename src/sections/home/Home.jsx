@@ -2,6 +2,8 @@ import React from "react";
 import "./home.css";
 import "./responsiveHome.css";
 
+import { motion } from "framer-motion";
+
 import homeMainImage from "../../assets/homePage/clearPill.webp";
 
 import factImgTarget from "../../assets/homePage/target.webp";
@@ -27,22 +29,37 @@ import OurClients from "../../components/ourClients/ourClients";
 import Marquee from "react-fast-marquee";
 
 function Home() {
+
+const homeFacts = [
+  { img: factImgTarget, name: "Target identification", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, pariatur?" },
+  { img: factImgCompound, name: "Compound screening", text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, adipisci!" },
+  { img: factImgPreclinical, name: "Preclinical testing", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, at!" }
+];
+
+const homeScroll = [
+  {img: faPills, name: "AI in drug design", text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque perspiciatis."},
+  {img: faHexagonNodes, name: "Molecular modeling", text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque perspiciatis."},
+  {img: faMicroscope, name: "Automated high-throughput screening", text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque perspiciatis."},
+  {img: faPills, name: "Predictive analytics in drug discovery", text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque perspiciatis."},
+  {img: faDna, name: "Genomic data analysis", text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque perspiciatis."}
+]
+
   return (
     <div className="homeBody">
       <div className="homeContent">
         <div className="homeText">
-          <p>
+          <motion.p initial={{x: -500, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1, delay: .5}} viewport={{ once: true }}>
             medical breakthroughts throught <br /> research and inovate
             solutions
-          </p>
-          <h1>
+          </motion.p>
+          <motion.h1 initial={{x: -500, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1, delay: .5}} viewport={{ once: true }}>
             Advancing <br /> Medicine for a <br /> Healthier Future
-          </h1>
+          </motion.h1>
         </div>
         <div className="homeMainImage">
-          <img src={homeMainImage} alt="" />
+          <motion.img initial={{x: 500, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1, delay: .5}} viewport={{ once: true }} src={homeMainImage} alt="" />
         </div>
-        <div className="homeMarquee">
+        <motion.div className="homeMarquee" initial={{ opacity: 0}} whileInView={{ opacity: 1}} transition={{duration: 1, delay: .5}} viewport={{ once: true }}>
           <Marquee speed={100}>
             <p className="text-lg font-bold mx-10">
               {" "}
@@ -55,51 +72,24 @@ function Home() {
               INNOVATION TODAY # INNOVATION TODAY # INNOVATION TODAY
             </p>
           </Marquee>
-        </div>
+        </motion.div>
         <div className="homeAboutUs">
           <div className="homeFacts">
-            <div className="factContainer">
-              <div className="factImgName">
-                <img src={factImgTarget} alt="" />
-                <span>
-                  Target <br /> identification
-                </span>
+          <div className="homeFacts">
+            {homeFacts.map((homeFact) => (
+              <div className="factContainer">
+                  <div className="factImgName">
+                    <motion.img src={homeFact.img} alt="" initial={{x: -100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1}} viewport={{ once: true }}/>
+                    <motion.span initial={{x: 100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1, delay: .5}} viewport={{ once: true }}>{homeFact.name}</motion.span>
+                  </div>
+                  <p>{homeFact.text}</p>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Tempora, pariatur?
-              </p>
-            </div>
-            <div className="factContainer">
-              <div className="factImgName">
-                <img src={factImgCompound} alt="" />
-                <span>
-                  Compound <br />
-                  screening
-                </span>
-              </div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Officia, adipisci!
-              </p>
-            </div>
-            <div className="factContainer">
-              <div className="factImgName">
-                <img src={factImgPreclinical} alt="" />
-                <span>
-                  Preclinical <br />
-                  testing
-                </span>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur, at!
-              </p>
-            </div>
+            ))}
+          </div>
           </div>
           <div className="aboutUsText">
             <div className="aboutUsLogo">
-              <div className="aboutUsTextImg">
+              <motion.div className="aboutUsTextImg" initial={{x: -200, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1, delay: .5}} viewport={{ once: true }}>
                 <div className="aboutUsLogoText">
                   <p>WHO WE ARE</p>
                   <span>Breakthrough technologies driving drug discovery</span>
@@ -107,15 +97,16 @@ function Home() {
                 <div className="aboutUsLogoImg">
                   <img src={aboutUsLogoImg} alt="" />
                 </div>
-              </div>
+              </motion.div>
               <div className="aboutUsLogoVideo">
-                <video
+                <motion.video
+                  initial={{x: -200, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1, delay: .5}} viewport={{ once: true }}
                   src={aboutUsLogoVideo}
                   autoplay
                   muted
                   loop
                   playsinline
-                ></video>
+                />
               </div>
             </div>
             <div className="aboutUsScroll">
@@ -132,59 +123,27 @@ function Home() {
                   unde omnis iste natus. Sed ut perspiciatis.
                 </span>
                 <div className="scrollSectors">
-                  <div className="scrollSector">
-                    <FontAwesomeIcon icon={faPills} />
-                    <h1>AI in drug design</h1>
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque perspiciatis.
-                    </p>
-                  </div>
-                  <div className="scrollSector">
-                    <FontAwesomeIcon icon={faHexagonNodes} />
-                    <h1>Molecular modeling</h1>
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque perspiciatis.
-                    </p>
-                  </div>
-                  <div className="scrollSector">
-                    <FontAwesomeIcon icon={faMicroscope} />
-                    <h1>Automated high-throughput screening</h1>
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque perspiciatis.
-                    </p>
-                  </div>
-                  <div className="scrollSector">
-                    <FontAwesomeIcon icon={faMicroscope} />
-                    <h1>Predictive analytics in drug discovery</h1>
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque perspiciatis.
-                    </p>
-                  </div>
-                  <div className="scrollSector">
-                    <FontAwesomeIcon icon={faDna} />
-                    <h1>Genomic data analysis</h1>
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque perspiciatis.
-                    </p>
-                  </div>
+                  {homeScroll.map((scrollFact) =>(
+                    <motion.div className="scrollSector" initial={{x: 300}} whileInView={{x: 0}} transition={{duration: 1, delay: .5}} viewport={{ once: true }}>
+                      <FontAwesomeIcon icon={scrollFact.img} />
+                      <h1>{scrollFact.name}</h1>
+                      <p>{scrollFact.text}</p>
+                  </motion.div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
           <div className="scrollEffectContainer">
-            <div className="scrollLeft">
-              Advancing medicine, <img src={scrollPills} alt="" />
-            </div>
+            <motion.div className="scrollLeft" initial={{x: 600}} whileInView={{x: 0}} transition={{duration: 1}}>
+              Advancing medicine, 
+              <img src={scrollPills} alt="" />
+            </motion.div>
 
-            <div className="scrollRight">
+            <motion.div className="scrollRight" initial={{x: -600}} whileInView={{x: 0}} transition={{duration: 1}}>
               <img src={scrollDna} alt="" />
               innovating to improve lives
-            </div>
+            </motion.div>
           </div>
           <div className="links">
             <div className="link Oncology">

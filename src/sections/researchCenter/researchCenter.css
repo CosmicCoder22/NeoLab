@@ -1,5 +1,9 @@
-.researchCenterContent{    font-family: var(--serif-font);
+.researchCenterContent{    
+    font-family: var(--serif-font);
     background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
 .researchCenterLogo{
     height: 100vh;
@@ -77,6 +81,7 @@
 .researchCenterFact{
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: start;
     justify-content: center;
     position: relative;
@@ -105,24 +110,18 @@
 .researchCenterFact img {
     height: 35em;
     border-radius: 20px;
-    animation: factSlide .4s forwards;
-}
-@keyframes factSlide {
-    0%{transform: translateX(-100%);}
-    100%{transform: translateX(0);}
 }
 .researchCenterFactsText{
     padding: 3em;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 10em;
 }
 .researchCenterFactsText p{
     width: 50%;
     color: var(--light-text);
 }
 .researchCenterFactsTextButtonsContainer{
-    height: 100%;
     width: 70%;
     display: flex;
     gap: 1em;
@@ -135,7 +134,7 @@
     color: var(--light-text);
     font-size: 3em;
     text-align: start;
-    transition: all .2s ease-in-out;
+    transition: all .8s ease-in-out;
     cursor: pointer;
 }
 .factBtn{
@@ -150,6 +149,21 @@
 .factBtn:hover{
     color: rgb(139, 139, 139);
 }
+.researchCenterContactUs{
+    width: 50%;
+    margin: auto;
+    color: var(--light-text);
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+.researchCenterContactUs p{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+.highlightedText{
+    color: #ff3333;
+}
 .researchCenterMarquue{
     width: 95%;
     margin: auto;
@@ -161,7 +175,34 @@
     mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
 .researchCenterMarquue p{
-  padding-right: .2em;
-  font-size: 2em;
-  color: var(--light-text);
+    padding-right: .2em;
+    font-size: 2em;
+    color: var(--light-text);
+}
+.ongoingProjects{
+    width: 100%;
+    display: flex;
+    color: var(--light-text)
+}
+.science,
+.achievements{
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.science p,
+.achievements p{
+    font-weight: 600;
+}
+.science{
+    background-image: url(../../assets/ResearchCenterPage/agriculture.webp);
+}
+.achievements{
+    background-image: url(../../assets/ResearchCenterPage/neuroscience.webp);
 }

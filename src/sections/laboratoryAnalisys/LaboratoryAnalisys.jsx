@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./laboratoryAnalisys.css";
 
-import ContactUs from "../../components/contactUs/ContactUs";
+import { motion } from "framer-motion";
 
 import chemicalImg from "../../assets/LaboratoryAnalisysPage/chemical.png";
 import microScopeImg from "../../assets/LaboratoryAnalisysPage/microScope.png";
@@ -26,6 +26,7 @@ import {
   faDna,
   faCheck
 } from "@fortawesome/free-solid-svg-icons";
+import { height } from "@fortawesome/free-brands-svg-icons/fa42Group";
 
 function LaboratoryAnalisys() {
   useEffect(() => {
@@ -55,33 +56,33 @@ function LaboratoryAnalisys() {
     <div className="laboratoryAnalisysBody">
       <div className="laboratoryAnalisysContent">
         <div className="analisysLogo">
-          <div className="logoTop">
+          <motion.div initial={{x: 500, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1.5, delay: .5}} viewport={{ once: true }} className="logoTop">
             <h1>accurate </h1>
             <img src={chemicalImg} alt="" />
-          </div>
+          </motion.div>
           <div className="logoMidle">
             <h1>analitycal</h1>
           </div>
-          <div className="logoBottom">
+          <motion.div initial={{x: -500, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1.5, delay: .5}} viewport={{ once: true }} className="logoBottom">
             <img src={microScopeImg} alt="" />
             <h1>results</h1>
-          </div>
+          </motion.div>
         </div>
-        <div className="laboratoryAnalisysMarquee">
+        <motion.div initial={{ opacity: 0}} whileInView={{ opacity: 1}} transition={{duration: 1, delay: .5}} viewport={{ once: true }} className="laboratoryAnalisysMarquee">
             <Marquee speed={100}>
               <p className="text-lg font-bold mx-10"> " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US</p>
               <p className="text-lg font-bold mx-10"> " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US " WHY CHOOSE US</p>
             </Marquee>
-        </div>
+        </motion.div>
         <div className="ourServices">
           <p>welcome to NeoLab</p>
           <h1>Our laboratory services</h1>
-          <div className="ourServicesContainer">
+          <motion.div className="ourServicesContainer" initial={{ x: -1500, opacity: 0}} whileInView={{ x: 0, opacity: 1}} transition={{duration: 1, delay: .5}} viewport={{ once: true }}>
             <ServiceCard img={ourServicesFoodTesting} number="01." name="Food Testing" />
             <ServiceCard img={ourServicesCropAnalisys} number="02." name="Crop Analysis" />
             <ServiceCard img={ourServicesSoilAnalisys} number="03." name="Soil Analysis" />
             <ServiceCard img={ourServicesWaterTesting} number="04." name="Water Testing" />
-          </div>
+          </motion.div>
         </div>
         <div className="counters">
           <Counter title="Scientists" target="90" />
@@ -100,10 +101,10 @@ function LaboratoryAnalisys() {
         </div>
         <div className="environmentalImpact">
           <div className="environmentalImpactImages">
-            <img src={environmentalImpactImageHands} alt="" className="environmentalImpactImage" />
-            <img src={environmentalImpactImageScientists} alt="" className="environmentalImpactImage" />
+            <motion.img src={environmentalImpactImageHands} alt="" className="environmentalImpactImage" initial={{x: -500, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1, delay: 1.3}} viewport={{ once: true }}/>
+            <motion.img src={environmentalImpactImageScientists} alt="" className="environmentalImpactImage" initial={{x: -500, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1, delay: 1}} viewport={{ once: true }}/>
           </div>
-          <div className="environmentalImpactBackground">
+          <motion.div className="environmentalImpactBackground" initial={{x: 500, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1, delay: .3}} viewport={{ once: true }}>
             <p className="environmentalImpactName">Environmental impact</p>
             <h1 className="environmentalImpactLogo">Automation in<br/>modern laboratory<br/>analysis</h1>
             <span className="environmentalImpactDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
@@ -119,9 +120,8 @@ function LaboratoryAnalisys() {
               </p>
             </div>
             <button className="ourTeamButton">our team</button>
-          </div>
+          </motion.div>
         </div>
-        <ContactUs />
       </div>
     </div>
   );
@@ -142,10 +142,10 @@ function ServiceCard({ img, number, name }) {
       <div className="servicesImgContainer">
         <img src={img} alt={name} />
       </div>
-      <div className="servicesNameContainer">
+      <motion.div className="servicesNameContainer" initial={{x: -100, opacity: 0}} whileInView={{x: 0, opacity: 1}} transition={{duration: 1, delay: 1}} viewport={{ once: true }}>
         <p className="serviceNumber">{number}</p>
         <span className="serviceName">{name}</span>
-      </div>
+      </motion.div>
       <div className="servicesUnderline"></div>
     </div>
   );

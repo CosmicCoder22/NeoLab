@@ -43,3 +43,19 @@ body{
 .appContent{
   transform: translateY(-7vh);
 }
+.contactUsBtn{
+  text-transform: uppercase;
+  color: var(--light-text);
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  width: fit-content;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.contactUsBtn:hover{
+  background-color: var(--light-text);
+  color: var(--dark-text);
+}

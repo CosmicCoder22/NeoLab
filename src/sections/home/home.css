@@ -1,6 +1,6 @@
 .homeBody {
   margin-top: 7vh;
-  background-image: url(/src/assets/homeBackground.webp);
+  background-image: url(/src/assets/homePage/homeBackground.webp);
   background-position: center;
   background-size: cover;
 }
@@ -85,6 +85,7 @@
 .factContainer span {
   font-size: 1.5em;
   font-weight: 600;
+  width: 50%;
 }
 .aboutUsText{
   display: flex;
@@ -219,7 +220,7 @@
   flex-direction: column;
   justify-content: end;
   color: var(--ligth-text);
-  background-color: rgba(0, 0, 0, 0.445);
+  background-color: rgba(0, 0, 0, 0);
   padding: 1em;
 }
 .linkText h1,
@@ -232,25 +233,25 @@
   cursor: pointer;
 }
 .Oncology{
-  background-image: url(/src/assets/Oncology.jpg);
+  background-image: url(/src/assets/homePage/Oncology.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .Neurology{
-  background-image: url(/src/assets/Neurology.jpg);
+  background-image: url(/src/assets/homePage/Neurology.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .InfectiousDiseases{
-  background-image: url(/src/assets/InfectiousDiseases.jpg);
+  background-image: url(/src/assets/homePage/InfectiousDiseases.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .Imunology{
-  background-image: url(/src/assets/Imunology.jpg);
+  background-image: url(/src/assets/homePage/Imunology.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
